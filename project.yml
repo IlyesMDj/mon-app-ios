@@ -1,0 +1,26 @@
+# Description du projet Xcode, lue par XcodeGen sur le Mac de GitHub Actions.
+# Le fichier MonApp.xcodeproj n'est pas dans le dépôt : il est généré à chaque compilation.
+name: MonApp
+
+options:
+  deploymentTarget:
+    iOS: "16.0"
+
+targets:
+  MonApp:
+    type: application
+    platform: iOS
+    sources: [MonApp]
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.ilyesmdj.monapp
+        MARKETING_VERSION: "1.0"
+        CURRENT_PROJECT_VERSION: "1"
+        SWIFT_VERSION: "5.0"
+        TARGETED_DEVICE_FAMILY: "1"
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_CFBundleDisplayName: "Mon App"
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        INFOPLIST_KEY_UIApplicationSceneManifest_Generation: YES
+        INFOPLIST_KEY_UISupportedInterfaceOrientations: UIInterfaceOrientationPortrait
